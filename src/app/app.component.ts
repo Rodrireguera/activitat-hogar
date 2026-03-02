@@ -10,4 +10,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'ioc-angular-activitathogar-rodrigo';
+
+  constructor() {
+    console.log('Activitat Hogar iniciada correctament - Rodrigo Fernández de la Reguera Villar');
+  }
+
 }
+
