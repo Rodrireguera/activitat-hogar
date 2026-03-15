@@ -1,6 +1,6 @@
 export interface Element {
   id: number;
-  name: string;
-  valor: number; 
-  description: string;
+  nom: string;
+  stock: number; 
+  descripcio: string;
 }

@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Element } from './models/element.model';
+import { ELEMENTS } from './mocks/dades-mock';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ioc-angular-activitathogar-rodrigo';
+  title = 'ioc-angular-EAC2-rodrigo';
+  elements: Element[] = ELEMENTS;
 }
