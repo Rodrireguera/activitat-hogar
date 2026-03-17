@@ -1,7 +1,7 @@
 
 import { Element } from '../models/element.model';
 export const ELEMENTS: Element[] = [
-  { id: 1, nom: 'Producte 1', stock: 9, descripcio: 'Descripció 1' },
+  { id: 1, nom: 'Producte 1', stock: 9, descripcio: 'Descripció 1'},
   { id: 2, nom: 'Producte 2', stock: 345, descripcio: 'Descripció 2' },
   { id: 3, nom: 'Producte 3', stock: 31, descripcio: 'Descripció 3' },
   { id: 4, nom: 'Producte 4', stock: 42, descripcio: 'Descripció 4' },

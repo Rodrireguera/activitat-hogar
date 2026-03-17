@@ -1,8 +1,17 @@
 
+<!--
 <article class="element" *ngFor="let element of elements">
   <div class ="element__contingut">    
     <h1 class ="element__nom">{{ element.nom }}</h1>
     <p class ="element__stock">Stock: {{ element.stock }}</p>   
     <p class ="element__descripcio">{{ element.descripcio }}</p>  
   </div>
-</article>  
+</article>
+-->
+<app-barra-cerca (cerca)="onCerca($event)"></app-barra-cerca>
+
+<app-llista-elements 
+  [elements]="elements" 
+  (seleccionar)="onSeleccionar($event)">
+</app-llista-elements>
+
