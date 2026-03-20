@@ -1,14 +1,65 @@
 
 import { Element } from '../models/element.model';
+
 export const ELEMENTS: Element[] = [
-  { id: 1, nom: 'Producte 1', stock: 9, descripcio: 'Descripció 1'},
-  { id: 2, nom: 'Producte 2', stock: 345, descripcio: 'Descripció 2' },
-  { id: 3, nom: 'Producte 3', stock: 31, descripcio: 'Descripció 3' },
-  { id: 4, nom: 'Producte 4', stock: 42, descripcio: 'Descripció 4' },
-  { id: 5, nom: 'Producte 5', stock: 54, descripcio: 'Descripció 5' },
-  { id: 6, nom: 'Producte 6', stock: 61, descripcio: 'Descripció 6' },
-  { id: 7, nom: 'Producte 7', stock: 47, descripcio: 'Descripció 7' },
-  { id: 8, nom: 'Producte 8', stock: 58, descripcio: 'Descripció 8' },
-  { id: 9, nom: 'Producte 9', stock: 62, descripcio: 'Descripció 9' },
-  { id: 10, nom: 'Producte 10', stock: 56, descripcio: 'Descripció 10' }
+  { 
+    id: 1, 
+    nom: 'Fontanería Pérez', 
+    telefon: 928123456, 
+    descripcio: 'Especialistas en reparaciones de agua y fugas.\nServicio rápido 24h en toda la zona.' 
+  },
+  { 
+    id: 2, 
+    nom: 'Electricidad López', 
+    telefon: 928234567, 
+    descripcio: 'Instalaciones eléctricas y averías domésticas.\nBoletines eléctricos y mantenimiento.' 
+  },
+  { 
+    id: 3, 
+    nom: 'Reformas Canarias', 
+    telefon: 928345678, 
+    descripcio: 'Reformas integrales de viviendas y locales.\nPresupuestos sin compromiso.' 
+  },
+  { 
+    id: 4, 
+    nom: 'Airesur Climatización', 
+    telefon: 928456789, 
+    descripcio: 'Instalación y mantenimiento de aire acondicionado.\nEspecialistas en eficiencia energética.' 
+  },
+  { 
+    id: 5, 
+    nom: 'Cerrajería Express', 
+    telefon: 928567890, 
+    descripcio: 'Apertura de puertas urgente 24 horas.\nCambio de cerraduras y sistemas de seguridad.' 
+  },
+  { 
+    id: 6, 
+    nom: 'Pinturas Morales', 
+    telefon: 928678901, 
+    descripcio: 'Pintura interior y exterior profesional.\nAcabados de alta calidad y rapidez.' 
+  },
+  { 
+    id: 7, 
+    nom: 'Limpiezas Atlántico', 
+    telefon: 928789012, 
+    descripcio: 'Servicios de limpieza para hogares y oficinas.\nLimpiezas profundas y mantenimiento.' 
+  },
+  { 
+    id: 8, 
+    nom: 'Jardinería VerdePlus', 
+    telefon: 928890123, 
+    descripcio: 'Diseño y mantenimiento de jardines.\nPoda, riego automático y paisajismo.' 
+  },
+  { 
+    id: 9, 
+    nom: 'Gas & Calor Canarias', 
+    telefon: 928901234, 
+    descripcio: 'Instalación y revisión de sistemas de gas.\nCalderas, calentadores y mantenimiento.' 
+  },
+  { 
+    id: 10, 
+    nom: 'Aluminios Costa', 
+    telefon: 928012345, 
+    descripcio: 'Ventanas, puertas y cerramientos de aluminio.\nSoluciones a medida para el hogar.' 
+  }
 ];

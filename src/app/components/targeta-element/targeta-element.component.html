@@ -1,6 +1,6 @@
 <div>
-    <h1>{{ element.nom }}</h1>
-    <h3>Stock del producte: {{ element.stock }}</h3>
+    <h1>{{ element.nom | meuUppercase }}</h1>
+    <h3>Telèfon del industrial: {{ element.telefon | meuTelefon }}</h3>
     <p>{{ element.descripcio }}</p>
 
     <button (click)="seleccionar()">Seleccionar</button>       

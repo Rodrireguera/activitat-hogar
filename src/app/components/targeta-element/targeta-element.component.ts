@@ -2,11 +2,13 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Element } from '../../models/element.model';
 import { ELEMENTS } from '../../mocks/dades-mock';
+import { MeuUppercasePipe } from '../../pipes/meu-uppercase.pipe';
+import { MeuTelefonPipe } from '../../pipes/meu-telefon.pipe';
 
 @Component({
   selector: 'app-targeta-element',
   standalone: true,
-  imports: [],
+  imports: [CommonModule, MeuUppercasePipe, MeuTelefonPipe],
   templateUrl: './targeta-element.component.html',
   styleUrl: './targeta-element.component.scss'
 })
@@ -17,6 +19,7 @@ export class TargetaElementComponent {
   //Quan el component fill em digui que s'ha fet clic a l'element, jo el rebré aquí 
   // i podré fer el que vulgui amb ell (mostrar-lo per consola, enviar-lo a un altre component, etc.)
   @Output() clic = new EventEmitter<Element>();
+
 
   seleccionar(){
     this.clic.emit(this.element);

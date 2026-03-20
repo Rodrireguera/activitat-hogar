@@ -16,13 +16,25 @@ export class AppComponent {
 
   title = 'ioc-angular-EAC2-rodrigo';
   elements: Element[] = ELEMENTS;
+  elementsFiltrats = [...this.elements];
 
   onSeleccionar(element: Element) {
     console.log('Element seleccionat:', element);
   }
 
-  onCerca(text: string) {
-  console.log('Buscando:', text);
+  onCerca(texto: string): void {
+    const valor = texto.toLowerCase();
+
+    if (!valor) {
+      this.elementsFiltrats = [...this.elements];
+    return;
+    }
+
+    this.elementsFiltrats = this.elements.filter(el =>
+      el.nom.toLowerCase().includes(valor) ||
+      el.descripcio.toLowerCase().includes(valor)
+    );
   }
+
 
 }

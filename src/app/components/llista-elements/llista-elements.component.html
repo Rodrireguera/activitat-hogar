@@ -1,11 +1,14 @@
 <div>
     <h2>Llista d'elements</h2>
-    <ul>
-        <li *ngFor="let element of elements">
+    <ul *ngIf="hiHaElements; else senseResultats">
+        <li *ngFor="let element of elements; let i = index; trackBy: trackById" >
             <app-targeta-element 
                 [element]="element" 
                 (clic)="onSeleccionar($event)">
             </app-targeta-element>
         </li>
     </ul>
+    <ng-template #senseResultats>
+        <p class="notrobats">No s'han trobat elements.</p>
+    </ng-template>
 </div>
