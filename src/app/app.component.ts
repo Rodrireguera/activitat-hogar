@@ -4,11 +4,12 @@ import { Element } from './models/element.model';
 import { ELEMENTS } from './mocks/dades-mock';
 import { BarraCercaComponent } from "./components/barra-cerca/barra-cerca.component";
 import { LlistaElementsComponent } from "./components/llista-elements/llista-elements.component";
+import { BuscadorIndustrialesComponent } from './components/buscador-industriales/buscador-industriales.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, BarraCercaComponent, LlistaElementsComponent],
+  imports: [CommonModule, BarraCercaComponent, LlistaElementsComponent, BuscadorIndustrialesComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
@@ -35,6 +36,5 @@ export class AppComponent {
       el.descripcio.toLowerCase().includes(valor)
     );
   }
-
 
 }
