@@ -1,3 +1,37 @@
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 20%;
+} 
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: green;
+  margin-bottom: 0px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #666;
+} 
+
 input.ng-invalid.ng-touched {
   border: 2px solid red;
 }
@@ -14,4 +48,46 @@ small {
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkolivegreen;
+  font-size: 18px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #666;
+  list-style-type: none;
+  background-color: #e1e1e1;
+  padding: 10px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.formulari { display: flex; flex-direction: column; }
+
+form {
+  margin-bottom: 0px !important;
+}
+
+#errorsBusqueda {
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.ajuda{
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 12px;
 }

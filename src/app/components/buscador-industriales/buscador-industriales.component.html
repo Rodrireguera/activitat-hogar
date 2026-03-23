@@ -1,23 +1,33 @@
-<form #form="ngForm" (ngSubmit)="buscarIndustrials()">
+<form #form="ngForm" (ngSubmit)="buscarIndustrials()" class="formulari">
+    <label for="terminoBusquedaInput">Busca el nom del industrial:</label><br>
     <input
         type="text"
+        id="terminoBusquedaInput"
         name="terminoBusqueda"
         [(ngModel)]="terminoBusqueda"
-        placeholder="Buscar el nom del industrial."
+        #terminoBusquedaCamp="ngModel"
+        placeholder="Buscar el nom del industrial"
         required minlength="3"
+        aria-describedby="errorsBusqueda ajudaBusqueda"
+        [attr.aria-invalid]="terminoBusquedaCamp.invalid && terminoBusquedaCamp.touched"
     >
-    <div *ngIf="form.controls['terminoBusqueda']?.invalid && form.controls['terminoBusqueda']?.touched">
-        <small *ngIf="form.controls['terminoBusqueda']?.errors?.['required']">El terme de búsqueda és obligatori.</small>
-        <small *ngIf="form.controls['terminoBusqueda']?.errors?.['minlength']">El terme de búsqueda deu tindre almeny 3 caràcters.</small>
+
+    <p id="ajudaBusqueda" class="ajuda">Useu un terme de búsqueda d'almenys 3 caràcters.</p>
+    <div id="errorsBusqueda" *ngIf="terminoBusquedaCamp.invalid && terminoBusquedaCamp.touched" role ="alert" aria-live="assertive" >
+        <small *ngIf="terminoBusquedaCamp.errors?.['required']">El terme de búsqueda és obligatori.</small>
+        <small *ngIf="terminoBusquedaCamp.errors?.['minlength']">El terme de búsqueda deu tindre almeny 3 caràcters.</small>
     </div>
 
-    <button type="submit" [disabled]="form.invalid" name="buscar">Buscar</button>
+    <button 
+        type="submit" [disabled]="form.invalid" 
+        name="buscar"
+        >Buscar</button>
 
     <ul>
         <li *ngFor="let element of resultatBusqueda">
-            <h3>{{ element.nom | meuUppercase}}</h3>
-            <p>Telèfon: {{ element.telefon | meuTelefon }}</p>
-            <p>{{ element.descripcio }}</p>
+        <h3>{{ element.nom | meuUppercase}}</h3>
+        <p>Telèfon: {{ element.telefon | meuTelefon }}</p> 
+        <p>{{ element.descripcio }}</p>
         </li>
     </ul>
 

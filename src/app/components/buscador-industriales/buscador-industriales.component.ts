@@ -22,6 +22,6 @@ export class BuscadorIndustrialesComponent {
   buscarIndustrials(){ 
     this.resultatBusqueda = this.elements.filter(i => 
       i.nom.toLowerCase().includes(this.terminoBusqueda.toLowerCase())
-  );
+   );
   }
 }
