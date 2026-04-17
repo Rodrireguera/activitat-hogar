@@ -1,44 +1,52 @@
 {
   "elements": [
     {
-      "id": "1",
-      "nom": "Rentadora",
-      "descripcio": "Rentadora de 8kg amb eficiència energètica A++",
-      "categoria": "Electrodomèstics",
-      "preu": 399.99,
-      "imatge": "https://via.placeholder.com/150",
-      "popular": true,
-      "stock": 5
+      "id": 1,
+      "nom": "Lampista Joan",
+      "descripcio": "Reparació de fuites i instal·lacions d'aigua",
+      "preu": "60",
+      "categoria": "lampista",
+      "popular": true
     },
     {
-      "id": "2",
-      "nom": "Sofà",
-      "descripcio": "Sofà de 3 places molt còmode",
-      "categoria": "Mobles",
-      "preu": 599.0,
-      "imatge": "https://via.placeholder.com/150",
-      "popular": false,
-      "stock": 2
+      "id": 2,
+      "nom": "Electricista Marc",
+      "descripcio": "Instal·lacions elèctriques i reparacions",
+      "preu": "65",
+      "categoria": "electricista",
+      "popular": true
     },
     {
-      "id": "3",
-      "nom": "Làmpada",
-      "descripcio": "Làmpada de peu amb llum càlida",
-      "categoria": "Decoració",
-      "preu": 49.99,
-      "imatge": "https://via.placeholder.com/150",
-      "popular": true,
-      "stock": 10
+      "id": 3,
+      "nom": "Pintor Carlos",
+      "descripcio": "Pintura interior i exterior",
+      "preu": "75",
+      "categoria": "pintor",
+      "popular": false
     },
     {
-      "id": "4",
-      "nom": "Taula menjador",
-      "descripcio": "Taula de fusta per a 6 persones",
-      "categoria": "Mobles",
-      "preu": 299.5,
-      "imatge": "https://via.placeholder.com/150",
-      "popular": false,
-      "stock": 3
+      "id": 4,
+      "nom": "Fuster Anna",
+      "descripcio": "Mobles a mida i reparacions de fusta",
+      "preu": "45",
+      "categoria": "fuster",
+      "popular": true
+    },
+    {
+      "id": 5,
+      "nom": "Tècnic Aire Jordi",
+      "descripcio": "Instal·lació i manteniment d'aire condicionat",
+      "preu": "60",
+      "categoria": "climatitzacio",
+      "popular": false
+    },
+    {
+      "id": 6,
+      "nom": "Paleta David",
+      "descripcio": "Reformes i obra general",
+      "preu": "70",
+      "categoria": "paleta",
+      "popular": true
     }
   ]
 }

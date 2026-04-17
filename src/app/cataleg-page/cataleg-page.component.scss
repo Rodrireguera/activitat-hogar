@@ -1,0 +1,88 @@
+div {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color:blue
+}
+
+p {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px 20px;
+  border: none;
+  background-color: #069f1d;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a252f;
+}
+
+.grip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ddd;         /* color base */
+  border-top: 6px solid #007bff;  /* color animado */
+  border-radius: 50%;
+  animation: girar 1s linear infinite;
+}
+.card {
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.descripcio {
+  font-size: 14px;
+  color: #333;
+  margin: 10px 0;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p.errortext {
+  color: red;
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
