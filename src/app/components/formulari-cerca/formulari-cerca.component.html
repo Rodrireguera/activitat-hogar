@@ -1,0 +1,48 @@
+
+<form [formGroup]="formulari">
+
+  <input
+    type="text"
+    formControlName="termeCerca"
+    placeholder="Introdueix un terme de cerca"
+    class="input-cerca"
+  />
+
+  <!-- Botó netejar -->
+  <button 
+    *ngIf="formulari.get('termeCerca')?.value" 
+    (click)="netejar()" 
+    type="button"
+    class="btn-cerca">
+    Netejar
+  </button>
+
+  <!-- Indicador async -->
+  <div 
+    *ngIf="carregant"
+    class="validant"
+    >
+    Validant...
+  </div>
+
+  <!-- Errors -->
+  <div 
+    *ngIf="formulari.get('termeCerca')?.touched"
+    class="error-container"
+  >
+
+    <small *ngIf="formulari.get('termeCerca')?.errors?.['minlength']">
+      Mínim 2 caràcters
+    </small>
+
+    <small *ngIf="formulari.get('termeCerca')?.errors?.['maxlength']">
+      Màxim 50 caràcters
+    </small>
+
+    <small *ngIf="formulari.get('termeCerca')?.errors?.['sensResultats']">
+      No s'han trobat resultats
+    </small>
+
+  </div>
+
+</form>

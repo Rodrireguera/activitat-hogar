@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
-import { ElementService } from '../serveis/element.service';
+import { ElementService } from '../../serveis/element.service';
 
 @Component({
   selector: 'app-cataleg-page',
