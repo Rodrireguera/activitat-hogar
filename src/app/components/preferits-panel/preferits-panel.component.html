@@ -1,0 +1,25 @@
+<div class="panell-preferits">
+
+  <h1>
+    Preferits ({{ preferitsService.totalPreferits() }})
+  </h1>
+
+  <div *ngIf="preferitsService.totalPreferits() === 0">
+    No hi ha preferits encara
+  </div>
+
+  <div *ngFor="let element of preferitsService.preferits()">
+    
+    <div class="item-preferit">
+        <h3>{{ element.titol}}</h3>
+        <p>{{ element.descripcio }}</p>
+
+      <button 
+      (click)="preferitsService.eliminarPreferit(element.id)" class="btn-cerca">
+        Eliminar
+      </button>    
+    </div>
+
+  </div>
+
+</div>

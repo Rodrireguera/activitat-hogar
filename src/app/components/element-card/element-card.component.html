@@ -1,0 +1,19 @@
+
+
+  <div class="element-card">
+
+    <h3>{{ element.titol }}</h3>
+    <p class="descripcio">{{ element.descripcio }}</p>
+    <p>Preu: <strong>{{ element.preu }} €</strong></p>
+
+    <button
+      class="btn-preferit"
+      [class.actiu]="preferitsService.esPreferit(element.id)"
+      (click)="togglePreferit()">
+
+      {{ preferitsService.esPreferit(element.id) ? '❤️' : '🤍' }}
+
+    </button>
+
+  </div>
+

@@ -13,13 +13,17 @@
 }
 
 @else {
+
   <div class="grid">
+
     @for (element of elements(); track element.id) {
-      <div class="card">
-        <h3>{{ element.titol }}</h3>
-        <p class="descripcio">{{ element.descripcio }}</p>
-        <p>Preu: <strong>{{ element.preu }} €</strong></p>
-      </div>
+
+      <app-element-card
+        [element]="element">
+      </app-element-card>
+      
     }
   </div>
+
 }
+
