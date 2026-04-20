@@ -1,23 +1,54 @@
 <div class="panell-preferits">
 
-  <h1>
-    Preferits ({{ preferitsService.totalPreferits() }})
-  </h1>
+  <h1>Preferits ({{ preferitsService.totalPreferits() }})</h1>
 
   <div *ngIf="preferitsService.totalPreferits() === 0">
     No hi ha preferits encara
   </div>
 
   <div *ngFor="let element of preferitsService.preferits()">
-    
+
     <div class="item-preferit">
-        <h3>{{ element.titol}}</h3>
-        <p>{{ element.descripcio }}</p>
+      <h3>{{ element.titol }}</h3>
+
+      <!-- FORMULARIO -->
+      <form [formGroup]="formularis[element.id]">
+
+        <!-- NOTES -->
+        <div formArrayName="notes">
+
+          <div *ngFor="let nota of getNotesArray(element.id).controls; let i = index">
+
+            <input
+              [formControlName]="i"
+              (blur)="actualitzarNotes(element.id)"
+              placeholder="Escriu una nota..." 
+              class="input-nota"/>
+
+            <button 
+              (click)="eliminarNota(element.id, i)" 
+              class="btn-tancar">
+              X
+            </button>
+
+            <div *ngIf="nota.invalid && nota.touched" class="error-container">
+              Mínim 3 caràcters
+            </div>
+
+          </div>
+
+        </div>
+
+      </form>
+
+      <button (click)="afegirNota(element.id)" class="btn-afegir">+ Afegir nota</button>
 
       <button 
-      (click)="preferitsService.eliminarPreferit(element.id)" class="btn-cerca">
+        (click)="preferitsService.eliminarPreferit(element.id)" 
+        class="btn-cerca">
         Eliminar
-      </button>    
+      </button> 
+
     </div>
 
   </div>

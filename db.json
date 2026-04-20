@@ -8,7 +8,12 @@
       "popular": true,
       "preu": 50,
       "imatge": "https://via.placeholder.com/150",
-      "stock": 1
+      "stock": 1,
+      "notes":[
+        "Llamar antes de las 5 PM",
+        "Cliente habitual"
+      ] 
+  
     },
     {
       "id": "2",
@@ -18,7 +23,8 @@
       "popular": true,
       "preu": 60,
       "imatge": "https://via.placeholder.com/150",
-      "stock": 1
+      "stock": 1,
+      "notes":[ ] 
     },
     {
       "id": "3",
@@ -28,7 +34,8 @@
       "popular": false,
       "preu": 120,
       "imatge": "https://via.placeholder.com/150",
-      "stock": 10
+      "stock": 10,
+      "notes":[ ] 
     },
     {
       "id": "4",
@@ -38,7 +45,8 @@
       "popular": false,
       "preu": 80,
       "imatge": "https://via.placeholder.com/150",
-      "stock": 2
+      "stock": 2,
+      "notes":[ ] 
     },
     {
       "id": "5",
@@ -48,7 +56,8 @@
       "popular": true,
       "preu": 200,
       "imatge": "https://via.placeholder.com/150",
-      "stock": 1
+      "stock": 1,
+      "notes":[ ] 
     }
   ]
 }

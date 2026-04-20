@@ -12,3 +12,4 @@
 | imatge         | imatgeUrl   | string   |
 | popular        | esPopular   | boolean  |
 | stock          | unitats     | number   |
+| notes          | string[]    | string[] |

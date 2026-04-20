@@ -1,7 +1,6 @@
  import { computed, Injectable, signal } from '@angular/core';
- import { ElementCataleg } from '../models/element.model';
+ import { ElementCataleg} from '../models/element.model';
 
- 
  @Injectable({
    providedIn: 'root'
  })

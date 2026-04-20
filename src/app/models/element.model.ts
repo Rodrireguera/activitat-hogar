@@ -7,6 +7,7 @@ export interface ElementApiResponse {
   popular: boolean;
   imatge: string;
   stock: number;
+  notes: string[];
 }
 
 export interface ElementCataleg {
@@ -18,4 +19,5 @@ export interface ElementCataleg {
   preu: number;
   imatgeUrl: string;
   unitats: number;
+  notes?: string[];
 }
