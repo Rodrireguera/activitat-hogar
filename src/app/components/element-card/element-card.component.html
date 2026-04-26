@@ -1,0 +1,17 @@
+  <div class="element-card">
+
+    <a [routerLink]="['/detall', element.id]" style="cursor: pointer;">
+    <h3>{{ element.titol }}</h3>
+    </a>
+    
+    <button
+      class="btn-preferit"
+      [class.actiu]="preferitsService.esPreferit(element.id)"
+      (click)="togglePreferit()">
+
+      {{ preferitsService.esPreferit(element.id) ? '❤️' : '🤍' }}
+
+    </button>
+
+  </div>
+

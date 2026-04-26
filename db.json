@@ -1,0 +1,63 @@
+{
+  "elements": [
+    {
+      "id": "1",
+      "nom": "Fontanero urgente",
+      "descripcio": "Reparación de fugas y mantenimiento de tuberías",
+      "categoria": "Industriales",
+      "popular": true,
+      "preu": 50,
+      "imatge": "https://via.placeholder.com/150",
+      "stock": 1,
+      "notes":[
+        "Llamar antes de las 5 PM",
+        "Cliente habitual"
+      ] 
+  
+    },
+    {
+      "id": "2",
+      "nom": "Electricista",
+      "descripcio": "Instalaciones eléctricas y reparaciones",
+      "categoria": "Industriales",
+      "popular": true,
+      "preu": 60,
+      "imatge": "https://via.placeholder.com/150",
+      "stock": 1,
+      "notes":[ ] 
+    },
+    {
+      "id": "3",
+      "nom": "Compra supermercado",
+      "descripcio": "Gastos mensuales de alimentación",
+      "categoria": "Gastos",
+      "popular": false,
+      "preu": 120,
+      "imatge": "https://via.placeholder.com/150",
+      "stock": 10,
+      "notes":[ ] 
+    },
+    {
+      "id": "4",
+      "nom": "Limpieza hogar",
+      "descripcio": "Servicio de limpieza semanal",
+      "categoria": "Servicios",
+      "popular": false,
+      "preu": 80,
+      "imatge": "https://via.placeholder.com/150",
+      "stock": 2,
+      "notes":[ ] 
+    },
+    {
+      "id": "5",
+      "nom": "Pintor",
+      "descripcio": "Pintura de paredes interiores",
+      "categoria": "Industriales",
+      "popular": true,
+      "preu": 200,
+      "imatge": "https://via.placeholder.com/150",
+      "stock": 1,
+      "notes":[ ] 
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+<div *ngIf="element" class="element-detall">
+  <p><strong>ID:</strong> {{ element.id }}</p>
+  <p><strong>Nom:</strong> {{ element.titol }}</p>
+  <p><strong>Descripció:</strong> {{ element.descripcio }}</p>
+  <p><strong>Preu:</strong> {{ element.preu }}</p>
+</div>
+
+<ng-template #loading>
+  <p>Carregant...</p>
+</ng-template>

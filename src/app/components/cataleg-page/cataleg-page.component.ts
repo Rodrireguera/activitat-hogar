@@ -1,0 +1,29 @@
+import { Component, inject } from '@angular/core';
+import { CommonModule } from '@angular/common'; 
+import { ElementService } from '../../serveis/element.service';
+import { ElementCardComponent } from '../element-card/element-card.component';
+
+@Component({
+  selector: 'app-cataleg-page',
+  standalone: true,
+  imports: [CommonModule, ElementCardComponent], 
+  templateUrl: './cataleg-page.component.html',
+  styleUrls: ['./cataleg-page.component.scss']
+})
+export class CatalegPage {
+
+  elementService = inject(ElementService);
+
+  // Observables
+  elements = this.elementService.elements$;
+  carregant = this.elementService.carregant$;
+  error = this.elementService.error$;
+
+  ngOnInit() {
+    this.elementService.obtenirPopulars();
+  }
+
+  reintentar() {
+    this.elementService.obtenirPopulars();
+  }
+}

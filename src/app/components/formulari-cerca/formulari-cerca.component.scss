@@ -1,0 +1,66 @@
+
+form {
+  align-items: center;
+  gap: 12px;
+  margin: 20px;
+}
+
+
+.input-cerca {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 300px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.2s ease;
+  margin: 10px;
+}
+
+
+.input-cerca:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+.btn-cerca {
+  padding: 10px 16px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+
+.btn-cerca:hover {
+  background-color: #45a049;
+}
+
+.btn-cerca:active {
+  transform: scale(0.97);
+}
+
+
+.validant {
+  font-size: 16px;
+  color: #2196F3;
+  margin-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.error-container {
+  margin-top: 16px;
+  margin-left: 20px;
+  font-size: 13px;
+  color: #d32f2f;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.error-container div {
+  margin-top: 4px;
+}

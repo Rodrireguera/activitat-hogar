@@ -1,0 +1,29 @@
+@if (carregant()) {
+  <div class="spinner-container">
+    <div class="spinner"></div>
+    <p>Carregant...</p>
+  </div>
+}
+
+@else if (error()) {
+  <div class="error">
+    <p class="errortext">{{ error() }}</p>
+    <button (click)="reintentar()">Tornar a intentar</button>
+  </div>
+}
+
+@else {
+
+  <div class="grid">
+
+    @for (element of elements(); track element.id) {
+
+      <app-element-card
+        [element]="element">
+      </app-element-card>
+      
+    }
+  </div>
+
+}
+
