@@ -14,7 +14,8 @@ import { Observable } from 'rxjs';
 export class NavbarComponent {
 
   usuari$: Observable<Usuari | null>; 
-
+  
+  // El constructor injecta el servei d'autenticació i inicialitza l'observable del usuari actual.
   constructor(public authService: AuthService) {
     this.usuari$ = this.authService.obtenirUsuari();
   }
