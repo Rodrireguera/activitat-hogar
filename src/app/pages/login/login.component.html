@@ -1,0 +1,32 @@
+<form (ngSubmit)="login()">
+    <div>
+        <input 
+        type="email" 
+        id="email" 
+        [(ngModel)]="email" 
+        name="email" 
+        placeholder="Email" 
+        required
+        class="input-cerca">
+    </div>
+    <div>
+        <input 
+        type="password" 
+        id="contrasenya" 
+        [(ngModel)]="contrasenya" 
+        placeholder="contrasenya" 
+        name="contrasenya" 
+        required
+        class="input-cerca">
+    </div>
+    <button 
+        type="submit"
+        class="btn-cerca"
+        >
+        Login
+    </button>
+    <p 
+    *ngIf="error"
+    class="error-container"
+    >{{ error }}</p>
+</form>
