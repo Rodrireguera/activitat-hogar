@@ -1,17 +1,19 @@
 
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { ElementCataleg } from '../../models/element.model';
 import { PreferitsService } from '../../serveis/preferits.service';
 import { CommonModule } from '@angular/common';
 import { ElementDetallComponent } from '../element-detall/element-detall.component';
 import { RouterLink } from '@angular/router';
 
+
 @Component({
   selector: 'app-element-card',
   templateUrl: './element-card.component.html',
   styleUrls: ['./element-card.component.scss'],
   standalone: true, 
-  imports: [CommonModule, ElementDetallComponent, RouterLink]
+  imports: [CommonModule, ElementDetallComponent, RouterLink],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ElementCardComponent {
 

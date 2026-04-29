@@ -11,7 +11,7 @@ export interface Usuari {
 @Injectable({ providedIn: 'root' })
 export class AuthService {
 
-  private usuariActual$ = new BehaviorSubject<Usuari | null>(null); // tipus de dades del usuari actual que emmagatzemarem l'ultim valor
+  private usuariActual$ = new BehaviorSubject<Usuari | null>(null); // tipus de dades del usuari actual que emmagatzemarem l'ultim valor que es va emetre, en aquest cas el usuari actual o null si no hi ha cap usuari autenticat
 
   estaAutenticat(): boolean {
     return this.usuariActual$.value !== null;

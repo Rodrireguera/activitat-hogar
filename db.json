@@ -1,63 +1,63 @@
 {
   "elements": [
-    {
-      "id": "1",
-      "nom": "Fontanero urgente",
-      "descripcio": "Reparación de fugas y mantenimiento de tuberías",
-      "categoria": "Industriales",
-      "popular": true,
-      "preu": 50,
-      "imatge": "https://via.placeholder.com/150",
-      "stock": 1,
-      "notes":[
-        "Llamar antes de las 5 PM",
-        "Cliente habitual"
-      ] 
-  
-    },
-    {
-      "id": "2",
-      "nom": "Electricista",
-      "descripcio": "Instalaciones eléctricas y reparaciones",
-      "categoria": "Industriales",
-      "popular": true,
-      "preu": 60,
-      "imatge": "https://via.placeholder.com/150",
-      "stock": 1,
-      "notes":[ ] 
-    },
-    {
-      "id": "3",
-      "nom": "Compra supermercado",
-      "descripcio": "Gastos mensuales de alimentación",
-      "categoria": "Gastos",
-      "popular": false,
-      "preu": 120,
-      "imatge": "https://via.placeholder.com/150",
-      "stock": 10,
-      "notes":[ ] 
-    },
-    {
-      "id": "4",
-      "nom": "Limpieza hogar",
-      "descripcio": "Servicio de limpieza semanal",
-      "categoria": "Servicios",
-      "popular": false,
-      "preu": 80,
-      "imatge": "https://via.placeholder.com/150",
-      "stock": 2,
-      "notes":[ ] 
-    },
-    {
-      "id": "5",
-      "nom": "Pintor",
-      "descripcio": "Pintura de paredes interiores",
-      "categoria": "Industriales",
-      "popular": true,
-      "preu": 200,
-      "imatge": "https://via.placeholder.com/150",
-      "stock": 1,
-      "notes":[ ] 
-    }
-  ]
+  { "id": "1", "nom": "Fontanero urgente", "descripcio": "Reparación de fugas y mantenimiento de tuberías", "categoria": "Industriales", "popular": true, "preu": 50, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "2", "nom": "Electricista", "descripcio": "Instalaciones eléctricas y reparaciones", "categoria": "Industriales", "popular": true, "preu": 60, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "3", "nom": "Compra supermercado", "descripcio": "Gastos mensuales de alimentación", "categoria": "Gastos", "popular": false, "preu": 120, "imatge": "https://via.placeholder.com/150", "stock": 10, "notes": [] },
+  { "id": "4", "nom": "Limpieza hogar", "descripcio": "Servicio de limpieza semanal", "categoria": "Servicios", "popular": false, "preu": 80, "imatge": "https://via.placeholder.com/150", "stock": 2, "notes": [] },
+  { "id": "5", "nom": "Pintor", "descripcio": "Pintura de paredes interiores", "categoria": "Industriales", "popular": true, "preu": 200, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+
+  { "id": "6", "nom": "Gasista", "descripcio": "Revisión de instalaciones de gas", "categoria": "Industriales", "popular": false, "preu": 70, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "7", "nom": "Internet casa", "descripcio": "Factura mensual internet", "categoria": "Gastos", "popular": true, "preu": 40, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "8", "nom": "Seguro hogar", "descripcio": "Pago anual seguro vivienda", "categoria": "Gastos", "popular": false, "preu": 300, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "9", "nom": "Carpintero", "descripcio": "Reparación de muebles", "categoria": "Industriales", "popular": false, "preu": 90, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "10", "nom": "Jardinero", "descripcio": "Mantenimiento del jardín", "categoria": "Servicios", "popular": true, "preu": 50, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+
+  { "id": "11", "nom": "Lavadora reparación", "descripcio": "Arreglo electrodoméstico", "categoria": "Servicios", "popular": false, "preu": 110, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "12", "nom": "Compra farmacia", "descripcio": "Medicamentos básicos", "categoria": "Gastos", "popular": false, "preu": 30, "imatge": "https://via.placeholder.com/150", "stock": 5, "notes": [] },
+  { "id": "13", "nom": "Mudanza", "descripcio": "Servicio de transporte", "categoria": "Servicios", "popular": true, "preu": 250, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "14", "nom": "Revisión caldera", "descripcio": "Mantenimiento anual", "categoria": "Industriales", "popular": false, "preu": 95, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "15", "nom": "Suscripción Netflix", "descripcio": "Entretenimiento mensual", "categoria": "Gastos", "popular": true, "preu": 15, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+
+  { "id": "16", "nom": "Compra ropa", "descripcio": "Ropa básica", "categoria": "Gastos", "popular": false, "preu": 80, "imatge": "https://via.placeholder.com/150", "stock": 3, "notes": [] },
+  { "id": "17", "nom": "Climatización", "descripcio": "Instalación aire acondicionado", "categoria": "Industriales", "popular": true, "preu": 400, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "18", "nom": "Compra gasolina", "descripcio": "Combustible mensual", "categoria": "Gastos", "popular": true, "preu": 100, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "19", "nom": "Cerrajero", "descripcio": "Apertura de puertas", "categoria": "Industriales", "popular": true, "preu": 85, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "20", "nom": "Decorador", "descripcio": "Diseño interior", "categoria": "Servicios", "popular": false, "preu": 150, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+
+  { "id": "21", "nom": "Compra mascotas", "descripcio": "Comida animales", "categoria": "Gastos", "popular": false, "preu": 60, "imatge": "https://via.placeholder.com/150", "stock": 4, "notes": [] },
+  { "id": "22", "nom": "Instalación luces", "descripcio": "Iluminación hogar", "categoria": "Industriales", "popular": false, "preu": 120, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "23", "nom": "Reparación tejado", "descripcio": "Filtraciones", "categoria": "Industriales", "popular": true, "preu": 300, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "24", "nom": "Compra libros", "descripcio": "Educación", "categoria": "Gastos", "popular": false, "preu": 40, "imatge": "https://via.placeholder.com/150", "stock": 2, "notes": [] },
+  { "id": "25", "nom": "Servicio técnico PC", "descripcio": "Reparación ordenador", "categoria": "Servicios", "popular": true, "preu": 90, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+
+  { "id": "26", "nom": "Compra muebles", "descripcio": "Mobiliario hogar", "categoria": "Gastos", "popular": false, "preu": 500, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "27", "nom": "Instalación persianas", "descripcio": "Protección solar", "categoria": "Industriales", "popular": false, "preu": 200, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "28", "nom": "Compra regalos", "descripcio": "Eventos", "categoria": "Gastos", "popular": true, "preu": 70, "imatge": "https://via.placeholder.com/150", "stock": 3, "notes": [] },
+  { "id": "29", "nom": "Fontanería mantenimiento", "descripcio": "Chequeo general", "categoria": "Industriales", "popular": false, "preu": 65, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "30", "nom": "Canguro", "descripcio": "Cuidado niños", "categoria": "Servicios", "popular": true, "preu": 50, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+
+  { "id": "31", "nom": "Compra electrónica", "descripcio": "Gadgets hogar", "categoria": "Gastos", "popular": false, "preu": 250, "imatge": "https://via.placeholder.com/150", "stock": 2, "notes": [] },
+  { "id": "32", "nom": "Instalación cámaras", "descripcio": "Seguridad", "categoria": "Industriales", "popular": true, "preu": 350, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "33", "nom": "Compra gimnasio", "descripcio": "Cuota mensual", "categoria": "Gastos", "popular": false, "preu": 45, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "34", "nom": "Reparación aire", "descripcio": "Climatización", "categoria": "Servicios", "popular": false, "preu": 120, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "35", "nom": "Compra juguetes", "descripcio": "Niños", "categoria": "Gastos", "popular": true, "preu": 60, "imatge": "https://via.placeholder.com/150", "stock": 5, "notes": [] },
+
+  { "id": "36", "nom": "Revisión eléctrica", "descripcio": "Chequeo instalación", "categoria": "Industriales", "popular": false, "preu": 80, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "37", "nom": "Compra decoración", "descripcio": "Decoración hogar", "categoria": "Gastos", "popular": false, "preu": 90, "imatge": "https://via.placeholder.com/150", "stock": 3, "notes": [] },
+  { "id": "38", "nom": "Reparación TV", "descripcio": "Electrónica", "categoria": "Servicios", "popular": true, "preu": 100, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "39", "nom": "Compra herramientas", "descripcio": "DIY", "categoria": "Gastos", "popular": false, "preu": 150, "imatge": "https://via.placeholder.com/150", "stock": 2, "notes": [] },
+  { "id": "40", "nom": "Instalación cocina", "descripcio": "Reforma", "categoria": "Industriales", "popular": true, "preu": 1000, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+
+  { "id": "41", "nom": "Compra limpieza", "descripcio": "Productos hogar", "categoria": "Gastos", "popular": false, "preu": 40, "imatge": "https://via.placeholder.com/150", "stock": 5, "notes": [] },
+  { "id": "42", "nom": "Reparación puerta", "descripcio": "Carpintería", "categoria": "Servicios", "popular": false, "preu": 70, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "43", "nom": "Compra viajes", "descripcio": "Vacaciones", "categoria": "Gastos", "popular": true, "preu": 600, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "44", "nom": "Revisión fontanería", "descripcio": "Mantenimiento anual", "categoria": "Industriales", "popular": false, "preu": 75, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "45", "nom": "Compra móvil", "descripcio": "Nuevo smartphone", "categoria": "Gastos", "popular": true, "preu": 800, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+
+  { "id": "46", "nom": "Instalación alarma", "descripcio": "Seguridad hogar", "categoria": "Industriales", "popular": true, "preu": 300, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "47", "nom": "Compra cursos", "descripcio": "Formación online", "categoria": "Gastos", "popular": false, "preu": 120, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "48", "nom": "Reparación coche", "descripcio": "Mecánica", "categoria": "Servicios", "popular": true, "preu": 200, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] },
+  { "id": "49", "nom": "Compra cocina", "descripcio": "Utensilios", "categoria": "Gastos", "popular": false, "preu": 90, "imatge": "https://via.placeholder.com/150", "stock": 4, "notes": [] },
+  { "id": "50", "nom": "Revisión general hogar", "descripcio": "Chequeo completo", "categoria": "Servicios", "popular": true, "preu": 150, "imatge": "https://via.placeholder.com/150", "stock": 1, "notes": [] }
+]
 }

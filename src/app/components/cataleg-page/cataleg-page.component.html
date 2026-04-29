@@ -14,16 +14,13 @@
 
 @else {
 
-  <div class="grid">
+  <cdk-virtual-scroll-viewport itemSize="100" style="height: 600px;">
 
-    @for (element of elements(); track element.id) {
+    <div *cdkVirtualFor="let element of elements(); trackBy: trackById" id="element">
+      <app-element-card [element]="element"></app-element-card>
+    </div>
 
-      <app-element-card
-        [element]="element">
-      </app-element-card>
-      
-    }
-  </div>
+  </cdk-virtual-scroll-viewport>
 
 }
 
