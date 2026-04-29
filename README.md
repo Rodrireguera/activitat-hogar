@@ -1,27 +1,56 @@
-# IocAngularActivitathogarRodrigo
+## Descripció del projecte
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.21.
+Aplicació Angular per gestionar serveis de la llar, industrials i despeses. Permet consultar un catàleg, veure detalls, gestionar preferits i autenticar-se.
 
-## Development server
+## Mapa de rutes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Path	        Component	                Public / privat
+....................................................................   
+/Redirecció  →  /cataleg	                    public
+/cataleg	    CatalegPage                     public
+/cerca	        FormulariCercaComponent         public
+/detall/	    ElementDetallComponent	        public
+/preferits	    PreferitsPanelComponent	        public
+/login	        LoginComponent	                public
+**	Redirecció → /cataleg	                    public
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Instruccions d'execució local
 
-## Build
+git clone [https://github.com/Rodrireguera/activitat-hogar] 
+cd [ACTIVITAT I DESPESES D'UNA LLAR] 
+npm install ng serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Obrir
+http://localhost:4200/
 
-## Running unit tests
+## Build de producció
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Per generar el build de producció s'ha utilitzat la comanda:
 
-## Running end-to-end tests
+ng build --configuration production
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Aquesta comanda genera una versió optimitzada de l'aplicació dins la carpeta dist/, reduint la mida dels fitxers i millorant el rendiment.
 
-## Further help
+Mida del bundle obtinguda:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Initial Chunk Files
+    main: 142.98 kB
+    polyfills: 34.52 kB
+    altres chunks: 196.70 kB
+
+Mida total inicial: 374.20 kB
+Transferència estimada: 98.38 kB
+
+Lazy Chunk Files
+    preferits-panel-component: 4.92 kB
+    Transferència estimada: 1.60 kB
+
+S'ha implementat lazy loading per a la ruta de preferits, de manera que aquest mòdul només es carrega quan l'usuari accedeix a aquesta secció, millorant el rendiment inicial de l'aplicació.
+
+## Credencials de la prova
+
+Email: admin@test.com
+Contrasenya: 1234
+
+
